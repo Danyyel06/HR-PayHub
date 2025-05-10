@@ -74,7 +74,19 @@
   </div>
 </div>
 
-    <button class="btn btn-primary me-2" style="text-align: center; float: right; margin-right: 5rem; width: 100px;">Place Order</button>
+    <div class="pick" style="display:grid;grid-template-columns: auto; padding:1rem 5rem 2rem 5rem;" >
+      <label for="text" style="padding-bottom: 0.5rem;">State</label>
+      <select id="mySelect" class="form-select" aria-label="Default select example">
+  <option selected>Select State</option>
+</select>
+</div>
+       <div class="hidden-input" style="display: grid; grid-template-columns: 1fr; padding: 0rem 5rem 0rem 5rem; margin: 0.2rem 0rem 0.2rem 0rem;">
+  <label for="text" style="padding-bottom: 0.5rem;">City</label>
+    <input type="text" class="form-control" placeholder="Enter City">
+  </div>
+
+
+    <button class="btn btn-primary" style="text-align: center; float: right; margin: 2rem 5rem 2rem 0rem; width: 150px;">Place Order</button>
 
 
 
