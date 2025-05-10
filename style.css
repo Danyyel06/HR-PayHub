@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.everythinng{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-1{
+    background-color: #ECF1F5;
+    height: 100%;
+    text-align: center;
+}
+
+.section-1 h1{
+  color: #2271B6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  max-width: 600px;
+  font-style: normal;
+  text-align: center;
+  padding-top:4rem;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+}
+
+.section-2{
+    background-color: #ffffff;
+    height: 100%;
+    padding-top: 4rem;  
+}
+.section-2 button{
+    text-align: right;
+}
+
+
+.Initials{
+    padding-left: 6rem;
+}
+
+input::placeholder { font-size: 14px; }
+input::-webkit-input-placeholder { font-size: 14px; } /* Chrome, Safari */
+input::-moz-placeholder { font-size: 14px; } /* Firefox */
+input:-ms-input-placeholder { font-size: 14px; } /* Internet Explorer */
+input:-moz-placeholder { font-size: 14px; } /* Firefox */
+
+
+
