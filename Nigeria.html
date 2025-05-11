@@ -52,20 +52,18 @@
 <div class="pick" style="display:grid;grid-template-columns: auto; padding:0rem 4rem 2rem 4rem;" >
   <select id="mySelect" class="form-select" aria-label="Default select example">
   <option selected>Select </option>
-  <option value="1">Bronze Monthly                  &pound;1.14</option>
-  <option value="2">Bronze Annually            &pound;0.99 x 12</option>
-  <option value="3">Silver Monthly                  &pound;3.44</option>
-  <option value="4">Silver Annually            &pound;2.99 x 12</option>
-  <option value="3">Gold Monthly                    &pound;5.74</option>
-  <option value="3">Gold Annually              &pound;4.99 x 12</option>
-  <option value="3">Platnuium Monthly               &pound;9.19</option>
-  <option value="3">Platnium Annually          &pound;7.99 x 12</option>
+  <option value="1">Bronze Monthly                  &#8358;1,149</option>
+  <option value="2">Bronze Annually            &#8358;999 x 12</option>
+  <option value="3">Silver Monthly                  &#8358;3,449</option>
+  <option value="4">Silver Annually            &#8358;2,999 x 12</option>
+  <option value="3">Gold Monthly                    &#8358;5,749</option>
+  <option value="3">Gold Annually              &#8358;4,999 x 12</option>
 </select>
 </div>
 
 <div class="mt-4">
     <div class="baseball" style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 5rem; padding: 1rem 5rem 1rem 5rem">
-    <button id="button1" class="btn btn-outline-primary me-2" disabled style="text-align: center;"> Start Free Trial</button>
+    <button id="button1" class="btn btn-outline-primary me-2" disabled style="text-align: center;" data-bs-toggle="modal"  data-bs-target="#staticBackdrop"> Start Free Trial</button>
     <button id="button2" class="btn btn-primary me-2" disabled style="text-align: center;" onclick="window.location.href='payment.html'">Subscribe and Pay</button>
   </div>
 </div>
@@ -81,15 +79,26 @@
 </div>
 
 
-<div style="display:flex; flex-direction:column;align-items:center; justify-content: center; width: 350px; height: 300px; background-color: blueviolet; border-radius: 15px;">
+
+
+
+
+
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="loginSuccessModalLabel" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered"> <!-- Centered Modal -->
+    <div class="modal-content">
+      
+      <div style="display:flex; flex-direction:column;align-items:center; justify-content: center; width: 100%; height:100%; border-radius: 15px; padding:5rem;">
         <p class="text-3" style="font-weight: bold;">Successful Activation</p>
         <div class="group-6">
             <img src="Images/Success.svg" class="vector-7" alt="vector" />
         </div>
         <p class="text-11" style="max-width: 350px; text-align: center;">You now have access to the ‘Silver’ subscription for the next 30 days</p>
-        <button id="button1" class="btn btn-primary me-2" style="text-align: center; font-weight: bold;"> Get Started </button>
+        <button id="button1" class="btn btn-primary me-2" style="text-align: center; font-weight: bold;"  data-bs-dismiss="modal"> Get Started </button>
+        </div>
+    </div>
+  </div>
 </div>
-
 
 
 
